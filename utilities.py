@@ -20,9 +20,8 @@ def setup_logging(root: str) -> object:
     """configure logging protocall.
 
     Defines the configuration for the python logging objects. At level debug
-    it will only log to the log file for the project. At info level it will
-    also send an email. I use logger.info for a success email and
-    logging.critical for a failed run of the script.
+    it will only log to the console. At info level it will log to the
+    projects log file. At warning level an email notification is sent.
  """
 
     # Create log directory if it does not exist
