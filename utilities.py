@@ -69,7 +69,11 @@ def setup_logging(root: str) -> object:
         },
         'loggers': {
             'logger': {
-                'handlers': ['file_handler', 'email_handler', 'console_handler'],
+                'handlers': [
+                    'file_handler',
+                    'email_handler',
+                    'console_handler',
+                    ],
                 'level': 'DEBUG',
                 'propagate': False,
 
